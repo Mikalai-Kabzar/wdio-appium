@@ -12,7 +12,7 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          env:m
+          env:
             BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
             BROWSERSTACK_APP_ID: ${{ secrets.BROWSERSTACK_APP_ID }}
             BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
