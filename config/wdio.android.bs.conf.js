@@ -22,7 +22,7 @@ config.capabilities = [{
     name: "local_test",
     device: "Motorola Moto G7 Play",
     os_version: "9.0",
-    app: process.env.BROWSERSTACK_APP_ID,
+    app: "bs://" + process.env.BROWSERSTACK_APP_ID,
     autoGrantPermissions: true
     //'browserstack.local': true
 }];
