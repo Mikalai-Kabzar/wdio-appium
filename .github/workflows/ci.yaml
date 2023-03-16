@@ -12,10 +12,10 @@ jobs:
         - name: Install
           run: npm install
         - name: Test
-          env:
-            BROWSERSTACK_ACCESS_KEY: ${{secrets.BROWSERSTACK_ACCESS_KEY}}
-            BROWSERSTACK_APP_ID: ${{secrets.BROWSERSTACK_APP_ID}}
-            BROWSERSTACK_USERNAME: ${{secrets.BROWSERSTACK_USERNAME}}
+          env:m
+            BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+            BROWSERSTACK_APP_ID: ${{ secrets.BROWSERSTACK_APP_ID }}
+            BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           run: npx wdio config/wdio.android.bs.conf.js
         - uses: actions/upload-artifact@v1
           if: failure()

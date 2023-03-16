@@ -23,15 +23,12 @@ config.capabilities = [{
     device: "Motorola Moto G7 Play",
     os_version: "9.0",
     app: "bs://".concat(process.env.BROWSERSTACK_APP_ID),
-
-
-
     autoGrantPermissions: true
     //'browserstack.local': true
 }];
-console.log(config.user),
-console.log(config.key),
-console.log(config.capabilities),
+console.log("config.user + " + config.user),
+console.log("config.key + "+config.key),
+console.log("config.capabilities + "+config.capabilities),
 console.log(config.capabilities.app),
 //config.port = 4723;
 
