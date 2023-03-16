@@ -26,11 +26,7 @@ config.capabilities = [{
     autoGrantPermissions: true
     //'browserstack.local': true
 }];
-console.log("config.user + " + config.user),
-console.log("config.key + "+config.key),
-console.log("config.capabilities + "+config.capabilities),
-console.log(config.capabilities.app),
-//config.port = 4723;
+
 
 config.services = ['browserstack'],
 exports.config = config;
